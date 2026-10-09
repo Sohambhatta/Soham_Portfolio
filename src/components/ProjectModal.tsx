@@ -108,9 +108,9 @@ export default function ProjectModal({ project, onClose, onSwitch }: { project: 
             )}
 
             {/* impact */}
-            <motion.section variants={block} className="mt-12">
-              <h3 className="mb-4 text-[11px] font-bold uppercase tracking-[0.3em] text-crimson-2">Result / Impact</h3>
-              <div className="grid grid-cols-2 gap-px overflow-hidden rounded-xl bg-white/10 sm:grid-cols-3 lg:grid-cols-5">
+            {project.metrics.length > 0 && <motion.section variants={block} className="mt-12">
+              <h3 className="mb-4 text-[11px] font-bold uppercase tracking-[0.3em] text-crimson-2">Project Numbers</h3>
+              <div className="grid grid-cols-1 gap-px overflow-hidden rounded-xl bg-white/10 sm:grid-cols-2">
                 {project.metrics.map((m, i) => (
                   <motion.div
                     key={m.label}
@@ -126,11 +126,11 @@ export default function ProjectModal({ project, onClose, onSwitch }: { project: 
                   </motion.div>
                 ))}
               </div>
-            </motion.section>
+            </motion.section>}
 
             <div className="mt-12 grid gap-10 lg:grid-cols-[3fr_2fr]">
               <motion.section variants={block}>
-                <h3 className="mb-4 text-[11px] font-bold uppercase tracking-[0.3em] text-crimson-2">My Contribution</h3>
+                <h3 className="mb-4 text-[11px] font-bold uppercase tracking-[0.3em] text-crimson-2">{project.id === 'bwsi-uas-sar' ? 'Team Project' : 'What I Built'}</h3>
                 <ul className="space-y-4">
                   {project.build.map((b) => (
                     <li key={b} className="flex gap-3 text-[15px] leading-relaxed text-bone/85">
@@ -167,7 +167,7 @@ export default function ProjectModal({ project, onClose, onSwitch }: { project: 
 
             {/* more like this */}
             <motion.section variants={block} className="mt-14 border-t border-white/10 pt-8">
-              <h3 className="mb-4 font-sans text-lg font-semibold text-bone">More Originals</h3>
+              <h3 className="mb-4 font-sans text-lg font-semibold text-bone">More Projects</h3>
               <div className="grid gap-4 sm:grid-cols-2">
                 {more.map((p) => (
                   <button

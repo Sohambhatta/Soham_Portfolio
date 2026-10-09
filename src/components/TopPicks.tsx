@@ -9,7 +9,7 @@ export default function TopPicks() {
   const rail = useRef<HTMLDivElement>(null);
   return (
     <>
-      <SectionHeading kicker="Selected work & ideas" title="Soham's Highlights" />
+      <SectionHeading kicker="At a glance" title="Project Highlights" />
       <div className="group/rail relative">
         <div ref={rail} className="rail gutter flex snap-x snap-mandatory gap-2 overflow-x-auto py-6">
           {topPicks.map((pick, i) => (
