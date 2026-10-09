@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 900" fill="none">
+  <defs>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="matrix(0 440 -390 0 400 390)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#164A68"/>
+      <stop offset="1" stop-color="#07070A" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="line" x1="172" x2="623" y1="238" y2="672" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4CC9FF"/>
+      <stop offset="1" stop-color="#B98BFF"/>
+    </linearGradient>
+  </defs>
+  <path fill="#07070A" d="M0 0h800v900H0z"/>
+  <path fill="url(#glow)" d="M0 0h800v900H0z"/>
+  <g stroke="url(#line)" stroke-opacity=".38">
+    <circle cx="400" cy="430" r="245"/>
+    <circle cx="400" cy="430" r="187"/>
+    <circle cx="400" cy="430" r="129"/>
+    <path d="M400 180v500M150 430h500M223 253l354 354m0-354L223 607"/>
+  </g>
+  <path stroke="#4CC9FF" stroke-linecap="round" stroke-width="5" d="M400 430 565 294"/>
+  <circle cx="400" cy="430" r="9" fill="#4CC9FF"/>
+  <circle cx="565" cy="294" r="8" fill="#B98BFF"/>
+  <rect x="180" y="691" width="440" height="112" rx="18" fill="#0D1118" stroke="#FFFFFF" stroke-opacity=".12"/>
+  <text x="400" y="771" fill="#F2F0E9" font-family="Arial,sans-serif" font-size="72" font-weight="700" letter-spacing="12" text-anchor="middle">SB</text>
+  <text x="400" y="854" fill="#9BA6B0" font-family="Arial,sans-serif" font-size="18" letter-spacing="8" text-anchor="middle">VISION · SIGNAL · SOFTWARE</text>
+</svg>
