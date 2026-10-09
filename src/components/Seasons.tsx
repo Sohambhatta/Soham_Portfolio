@@ -14,8 +14,8 @@ export default function Seasons() {
     <>
       <SectionHeading
         kicker={`${seasons.length} Seasons`}
-        title="My Journey"
-        aside={<p className="max-w-xs text-sm text-mist">Explore the ideas and technical arcs behind the projects — select a season to see its episodes.</p>}
+        title="Behind the Projects"
+        aside={<p className="max-w-xs text-sm text-mist">Choose a theme to explore the work behind each project.</p>}
       />
 
       {/* season selector */}

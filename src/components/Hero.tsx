@@ -43,9 +43,9 @@ export default function Hero({ onPlay, onResume, profileId }: { onPlay: () => vo
   ];
 
   const floating = [
-    { text: '40–50 cm', sub: 'Documented SAR target spacing', pos: 'left-[2%] top-[30%]', depth: 1 },
-    { text: 'SSD-MobileNet-V2', sub: 'Doorcam object detection', pos: 'right-[0%] top-[18%]', depth: -1 },
-    { text: 'Vision · Radar · Data', sub: 'Project focus', pos: 'right-[4%] bottom-[24%]', depth: 0.6 },
+    { text: '40–50 cm', sub: 'Indoor SAR target spacing', pos: 'left-[2%] top-[30%]', depth: 1 },
+    { text: 'SSD-MobileNet-V2', sub: 'Doorcam on Jetson', pos: 'right-[0%] top-[18%]', depth: -1 },
+    { text: 'Vision · Radar · Data', sub: 'What I work on', pos: 'right-[4%] bottom-[24%]', depth: 0.6 },
   ];
 
   return (

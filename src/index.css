@@ -87,6 +87,25 @@ body {
   display: none;
 }
 
+/* Allow technical names to wrap within cards without clipping text. */
+.project-copy,
+.project-copy span,
+article p,
+article h3,
+article h4,
+button span {
+  overflow-wrap: anywhere;
+}
+.project-copy > * {
+  min-width: 0;
+}
+@media (min-width: 1024px) and (max-height: 759px) {
+  .project-poster {
+    height: auto;
+    min-height: 460px;
+  }
+}
+
 /* Custom cursor: hide the native one only when ours is active */
 .has-custom-cursor,
 .has-custom-cursor a,

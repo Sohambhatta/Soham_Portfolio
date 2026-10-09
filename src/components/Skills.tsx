@@ -12,7 +12,7 @@ export default function Skills() {
 
   return (
     <>
-      <SectionHeading kicker="Genres" title="My Skill Universe" aside={<p className="max-w-xs text-sm text-mist">Hover or tap a skill to see which projects use it.</p>} />
+      <SectionHeading kicker="Genres" title="Tools I Work With" aside={<p className="max-w-xs text-sm text-mist">Hover or tap a skill to see which projects use it.</p>} />
 
       <div className="gutter grid gap-8 lg:grid-cols-[260px_minmax(0,1fr)] lg:gap-14">
         {/* genre list */}
@@ -76,7 +76,7 @@ function SkillCard({ skill, hue }: { skill: Skill; hue: string }) {
         exit: { opacity: 0, y: -12, transition: { duration: 0.2 } },
       }}
       whileHover={{ y: -6 }}
-      className="group relative flex min-h-[148px] flex-col overflow-hidden rounded-xl bg-ink-2 p-4 text-left ring-1 ring-white/10 transition-shadow duration-500 hover:ring-white/20"
+      className="group relative flex min-w-0 min-h-[148px] flex-col overflow-hidden rounded-xl bg-ink-2 p-4 text-left ring-1 ring-white/10 transition-shadow duration-500 hover:ring-white/20"
       style={{ boxShadow: open ? `0 18px 50px -12px ${hue}55, 0 0 0 1px ${hue}66` : undefined }}
     >
       <div aria-hidden className="absolute -right-10 -top-10 h-32 w-32 rounded-full opacity-0 blur-2xl transition duration-500 group-hover:opacity-60" style={{ background: hue }} />
@@ -89,7 +89,7 @@ function SkillCard({ skill, hue }: { skill: Skill; hue: string }) {
       >
         {skill.mono}
       </motion.span>
-      <span className="relative mt-4 flex items-center gap-2 text-[15px] font-semibold text-bone">
+      <span className="relative mt-4 flex min-w-0 flex-wrap items-center gap-2 text-[15px] font-semibold text-bone">
         {skill.name}
         {skill.note && (
           <span className="rounded px-1.5 py-px text-[9px] font-bold uppercase tracking-wider text-ink" style={{ background: hue }}>

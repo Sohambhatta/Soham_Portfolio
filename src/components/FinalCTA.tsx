@@ -14,7 +14,8 @@ export default function FinalCTA({ onReplay }: { onReplay: () => void }) {
   const opacity = useTransform(scrollYProgress, [0.1, 0.9], [0, 1]);
 
   const ctas = [
-    { label: 'Explore GitHub', href: profile.links.github, primary: true, cursor: 'play' },
+    { label: 'Connect on LinkedIn', href: profile.links.linkedin, primary: true, cursor: 'link' },
+    { label: 'Explore GitHub', href: profile.links.github, primary: false, cursor: 'link' },
   ];
 
   return (
@@ -78,7 +79,7 @@ export default function FinalCTA({ onReplay }: { onReplay: () => void }) {
 
       <div className="relative mt-16 flex flex-wrap justify-center gap-6 text-xs font-semibold tracking-[0.24em] text-smoke">
         <button type="button" onClick={() => scrollTo(0, { offset: 0 })} className="hover:text-bone">
-          ↺ WATCH AGAIN
+          ↺ BACK TO TOP
         </button>
         <button type="button" onClick={onReplay} className="hover:text-bone">
           ▶ REPLAY OPENING

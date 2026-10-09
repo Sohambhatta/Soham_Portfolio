@@ -1,13 +1,13 @@
 import { motion } from 'framer-motion';
-import { profile, projects, skillCategories } from '../data/portfolio';
+import { profile, projects } from '../data/portfolio';
 import { EASE, SectionHeading, Tilt } from './fx';
 
 export default function About() {
   const facts = [
     { k: 'Focus', v: 'Applied AI', s: 'Computer vision · signal processing' },
     { k: 'Builds', v: `${projects.length} featured projects`, s: 'From prototypes to web applications' },
-    { k: 'Approach', v: 'Build · test · explain', s: 'Grounded in what the work demonstrates' },
-    { k: 'Tools', v: `${skillCategories.length} focus areas`, s: 'Software, data, and hardware' },
+    { k: 'Education', v: 'University of Michigan', s: 'College of Engineering · 2026–Present' },
+    { k: 'Team Work', v: 'BWSI UAS–SAR', s: 'First place · 2025 final competition' },
   ];
 
   return (
@@ -53,9 +53,9 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 1, ease: EASE }}
           >
-            “{profile.intro}”
+            {profile.about}
           </motion.p>
-          <p className="mt-4 text-sm text-mist">— {profile.fullName}</p>
+          <p className="mt-4 text-sm text-mist">{profile.fullName}</p>
 
           <motion.dl
             className="mt-10 grid gap-px overflow-hidden rounded-xl bg-white/10 sm:grid-cols-2"

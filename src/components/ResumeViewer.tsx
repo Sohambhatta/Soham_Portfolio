@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { achievements, profile, projects, skillCategories } from '../data/portfolio';
+import { achievements, education, profile, projects, skillCategories } from '../data/portfolio';
 import { EASE, Magnetic, SectionHeading } from './fx';
 
 /** THE FULL STORY — a concise project profile with the work and tools in one place. */
@@ -22,7 +22,7 @@ export default function ResumeSection({ onView }: { onView: () => void }) {
         <div className="lg:sticky lg:top-28 lg:self-start">
           <p className="font-serif text-3xl italic leading-tight text-bone">The work, all in one place.</p>
           <p className="mt-3 text-sm leading-relaxed text-mist">
-            A concise overview of featured projects, technical focus areas, and documented milestones.
+            My education, projects, and tools in one view. The project cards above include more detail and links to the code.
           </p>
           <div className="mt-6 flex flex-col gap-3">
             <Magnetic className="w-full">
@@ -90,11 +90,20 @@ export function ResumeSheet() {
           <a href={profile.links.github} target="_blank" rel="noreferrer" className="hover:text-bone">
             GitHub ↗
           </a>
+          <a href={profile.links.linkedin} target="_blank" rel="noreferrer" className="ml-4 hover:text-bone">LinkedIn ↗</a>
         </div>
       </header>
 
       <div className="grid gap-x-10 md:grid-cols-[1.4fr_1fr]">
         <div>
+          <H>Education</H>
+          {education.map((e) => (
+            <div key={e.school} className="mb-5 text-xs leading-relaxed text-mist">
+              <p className="font-semibold text-bone">{e.school}</p>
+              <p>{e.degree} · {e.period}</p>
+              <p>{e.place}</p>
+            </div>
+          ))}
           <H>Projects</H>
           {projects.map((p) => (
             <div key={p.id} className="mb-3">

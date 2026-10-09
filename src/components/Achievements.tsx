@@ -23,7 +23,7 @@ export default function Achievements() {
     <>
       <SectionHeading kicker="Build notes" title="Project Milestones" />
 
-      <div className="gutter grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 [perspective:1400px]">
+      <div className="gutter grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 [perspective:1400px]">
         {achievements.map((a, i) => (
           <motion.div
             key={a.id}
@@ -54,7 +54,7 @@ export default function Achievements() {
                     data-cursor="link"
                     className="relative mt-auto inline-flex min-h-10 items-center gap-1 pt-5 text-xs font-semibold tracking-wide text-bone underline decoration-[#d9b46a]/60 underline-offset-4 hover:decoration-[#d9b46a]"
                   >
-                    Explore project ↗
+                    View source ↗
                   </a>
                 )}
               </article>

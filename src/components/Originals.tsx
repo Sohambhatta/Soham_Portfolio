@@ -1,7 +1,7 @@
 import { useLayoutEffect, useRef, useState } from 'react';
 import { motion, useMotionValue, useScroll, useSpring, useTransform } from 'framer-motion';
 import { profile, projects, type Project } from '../data/portfolio';
-import { useDesktop, useReducedMotionPref } from '../hooks/useMedia';
+import { useDesktop, useMedia, useReducedMotionPref } from '../hooks/useMedia';
 import { EASE, RevealText } from './fx';
 import ProjectCard from './ProjectCard';
 
@@ -11,19 +11,20 @@ import ProjectCard from './ProjectCard';
  */
 export default function Originals({ onOpen }: { onOpen: (p: Project) => void }) {
   const desktop = useDesktop();
+  const tall = useMedia('(min-height: 760px)');
   const reduced = useReducedMotionPref();
-  return desktop && !reduced ? <PinnedOriginals onOpen={onOpen} /> : <RailOriginals onOpen={onOpen} />;
+  return desktop && tall && !reduced ? <PinnedOriginals onOpen={onOpen} /> : <RailOriginals onOpen={onOpen} />;
 }
 
 function Intro() {
   return (
     <div className="flex w-full shrink-0 flex-col justify-center lg:w-[34vw]">
       <p className="mb-3 flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.32em] text-crimson-2">
-        <span className="h-px w-8 bg-crimson-2" /> {projects.length} Originals · {projects[0].year}
+        <span className="h-px w-8 bg-crimson-2" /> {projects.length} Featured Projects
       </p>
       <RevealText as="h2" text="ORIGINALS" className="font-display text-[clamp(3.5rem,9vw,8rem)] leading-[0.85] text-bone" />
       <p className="mt-4 max-w-sm text-[15px] leading-relaxed text-mist">
-        Five projects across computer vision, radar imaging, data analysis, and product design. Open any title for the technical story.
+        Doorcam, our BWSI radar project, and a stock dashboard. Pick a project to see the code and how it works.
       </p>
       <p className="mt-6 hidden text-xs tracking-[0.24em] text-smoke lg:block">SCROLL TO BROWSE →</p>
     </div>

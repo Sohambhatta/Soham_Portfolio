@@ -26,15 +26,14 @@ The static site is written to `dist/` and can be deployed to Vercel, Netlify, Gi
 
 Project and profile content is centralized in [`src/data/portfolio.ts`](src/data/portfolio.ts). Update that file to edit the introduction, featured projects, skills, project milestones, journey episodes, and highlight reel.
 
-The featured projects include:
-
-- **Basketball Hoop Detection** — a camera-based training prototype with live scoring.
+The three featured projects include:
 - **Doorcam** — an NVIDIA Jetson person-and-pet safety prototype. Its physical door hardware is described as a prototype, not a deployed system.
 - **UAS Synthetic Aperture Radar** — a collaborative BWSI project; the linked GitHub repository is a demonstration snapshot.
 - **AI Stock Analysis** — a dashboard combining technical indicators and news sentiment; its output is educational analysis, not financial advice.
-- **VentPilot** — a smart-home climate-control concept and presentation website, not a verified installed HVAC system.
 
 Descriptions distinguish solo work, team contributions, prototypes, and measured results based on the project details available. Update or remove any claim that no longer reflects the current project.
+
+Copy was reviewed against the owner's supplied project descriptions and linked source code. See [`CONTENT_SOURCES.md`](CONTENT_SOURCES.md) for the factual basis and verification limits.
 
 ## Structure
 

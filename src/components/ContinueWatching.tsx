@@ -8,7 +8,7 @@ import { EASE, RevealText } from './fx';
 import { PosterBackdrop } from './Poster';
 import { RailButtons } from './Rail';
 
-const GLYPHS: Record<SectionId, string> = { about: 'SB', journey: 'S01', originals: '5', picks: '↗', skills: '{ }', moments: '✦', story: 'CV' };
+const GLYPHS: Record<SectionId, string> = { about: 'SB', journey: 'S01', originals: '3', picks: '↗', skills: '{ }', moments: '✦', story: 'CV' };
 
 export default function ContinueWatching({ order }: { order: SectionId[] }) {
   const progress = useWatchProgress();
@@ -21,7 +21,7 @@ export default function ContinueWatching({ order }: { order: SectionId[] }) {
     <section aria-labelledby="continue-title" className="relative z-10 -mt-10 pb-10 sm:-mt-16">
       <div className="gutter mb-4 flex items-end justify-between">
         <RevealText as="h2" text="Continue Exploring" className="font-sans text-lg font-semibold tracking-tight text-bone sm:text-2xl" />
-        <span className="hidden text-xs text-smoke sm:block">Progress shows what you&apos;ve watched so far</span>
+        <span className="hidden text-xs text-smoke sm:block">Pick a section · track where you&apos;ve been</span>
       </div>
       <div className="group/rail relative">
         <div ref={rail} className="rail gutter flex snap-x snap-mandatory gap-3 overflow-x-auto py-8 sm:gap-4" data-cursor={fine ? undefined : 'drag'}>
@@ -39,7 +39,7 @@ export default function ContinueWatching({ order }: { order: SectionId[] }) {
                 onHoverEnd={() => setHovered(null)}
                 onFocus={() => setHovered(i)}
                 onBlur={() => setHovered(null)}
-                className="group relative aspect-video w-[72vw] shrink-0 snap-start overflow-visible text-left sm:w-[42vw] md:w-[30vw] lg:w-[22vw]"
+                className="group relative aspect-video min-h-[168px] w-[72vw] shrink-0 snap-start overflow-visible text-left sm:w-[42vw] md:w-[30vw] lg:w-[22vw]"
                 initial={{ opacity: 0, y: 40, filter: 'blur(8px)' }}
                 whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
                 viewport={{ once: true, margin: '-5% 0px' }}

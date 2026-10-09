@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { profile, viewerProfiles, type ProfileId } from '../data/portfolio';
+import { viewerProfiles, type ProfileId } from '../data/portfolio';
 import { EASE } from './fx';
 
 export function ProfileAvatar({ id, size = 'lg' }: { id: ProfileId; size?: 'sm' | 'lg' }) {
@@ -74,7 +74,7 @@ export default function ProfileSelector({ onPick }: { onPick: (id: ProfileId) =>
         ))}
       </motion.ul>
       <p className="relative mt-12 max-w-md text-center text-xs leading-relaxed text-smoke">
-        Every profile watches the same true story of {profile.displayName} — it only changes what plays first.
+        Choose a view. Each one shows the same portfolio in a different order.
       </p>
     </motion.div>
   );
