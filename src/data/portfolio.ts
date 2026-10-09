@@ -187,7 +187,7 @@ export const achievements: Achievement[] = [
 export type Certification = { issuer: string; name: string; link: string };
 export const certifications: Certification[] = [];
 
-export type Skill = { name: string; mono: string; note?: string };
+export type Skill = { name: string; badge: string; note?: string };
 export type SkillCategory = { id: string; title: string; subtitle: string; skills: Skill[] };
 
 export const skillCategories: SkillCategory[] = [
@@ -196,10 +196,10 @@ export const skillCategories: SkillCategory[] = [
     title: 'Programming',
     subtitle: 'Building and integrating software',
     skills: [
-      { name: 'Python', mono: 'Py' },
-      { name: 'HTML', mono: 'Ht' },
-      { name: 'CSS', mono: 'Cs' },
-      { name: 'JavaScript', mono: 'Js' },
+      { name: 'Python', badge: 'Python' },
+      { name: 'HTML', badge: 'HTML' },
+      { name: 'CSS', badge: 'CSS' },
+      { name: 'JavaScript', badge: 'JS' },
     ],
   },
   {
@@ -207,11 +207,11 @@ export const skillCategories: SkillCategory[] = [
     title: 'Computer Vision & Edge AI',
     subtitle: 'Live camera detection on Jetson',
     skills: [
-      { name: 'OpenCV', mono: 'Cv' },
-      { name: 'SSD-MobileNet-V2', mono: 'Sd' },
-      { name: 'NVIDIA Jetson', mono: 'Jt' },
-      { name: 'PyTorch', mono: 'Pt' },
-      { name: 'Jetson Inference', mono: 'Ji' },
+      { name: 'OpenCV', badge: 'OpenCV' },
+      { name: 'SSD-MobileNet-V2', badge: 'SSD' },
+      { name: 'NVIDIA Jetson', badge: 'Jetson' },
+      { name: 'PyTorch', badge: 'PyTorch' },
+      { name: 'Jetson Inference', badge: 'Jetson Inference' },
     ],
   },
   {
@@ -219,11 +219,11 @@ export const skillCategories: SkillCategory[] = [
     title: 'Signal Processing',
     subtitle: 'Radar data, motion, and reconstruction',
     skills: [
-      { name: 'Synthetic Aperture Radar', mono: 'Sr' },
-      { name: 'Backprojection', mono: 'Bp' },
-      { name: 'CUDA / CuPy', mono: 'Cu' },
-      { name: 'NumPy', mono: 'Np' },
-      { name: 'OptiTrack', mono: 'Ot' },
+      { name: 'Synthetic Aperture Radar', badge: 'SAR' },
+      { name: 'Backprojection', badge: 'Backprojection' },
+      { name: 'CUDA / CuPy', badge: 'CUDA / CuPy' },
+      { name: 'NumPy', badge: 'NumPy' },
+      { name: 'OptiTrack', badge: 'OptiTrack' },
     ],
   },
   {
@@ -231,11 +231,11 @@ export const skillCategories: SkillCategory[] = [
     title: 'Web & Data Applications',
     subtitle: 'Charts, news sentiment, and web interfaces',
     skills: [
-      { name: 'Flask', mono: 'Fl' },
-      { name: 'Plotly', mono: 'Pl' },
-      { name: 'VADER', mono: 'Va' },
-      { name: 'TextBlob', mono: 'Tb' },
-      { name: 'yfinance', mono: 'Yf' },
+      { name: 'Flask', badge: 'Flask' },
+      { name: 'Plotly', badge: 'Plotly' },
+      { name: 'VADER', badge: 'VADER' },
+      { name: 'TextBlob', badge: 'TextBlob' },
+      { name: 'yfinance', badge: 'yfinance' },
     ],
   },
   {
@@ -243,11 +243,11 @@ export const skillCategories: SkillCategory[] = [
     title: 'Hardware & Tools',
     subtitle: 'Devices and development tools',
     skills: [
-      { name: 'Raspberry Pi', mono: 'Pi' },
-      { name: 'CustomTkinter', mono: 'Tk' },
-      { name: 'Git / GitHub', mono: 'Gt' },
-      { name: 'Yahoo Finance Data', mono: 'Yf' },
-      { name: 'RSS Feeds', mono: 'Rs' },
+      { name: 'Raspberry Pi', badge: 'Pi' },
+      { name: 'CustomTkinter', badge: 'CustomTkinter' },
+      { name: 'Git / GitHub', badge: 'Git / GitHub' },
+      { name: 'Yahoo Finance Data', badge: 'Yahoo Finance' },
+      { name: 'RSS Feeds', badge: 'RSS' },
     ],
   },
 ];
