@@ -19,6 +19,7 @@ export default function RecognitionCards({ items }: { items: Achievement[] }) {
         {items.map((a, i) => (
           <motion.div
             key={a.id}
+            className={items.length > 3 && items.length % 3 === 1 && i === items.length - 1 ? 'lg:col-start-2' : undefined}
             initial={{ opacity: 0, y: 50, rotateX: 18 }}
             whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
             viewport={{ once: true, margin: '-8% 0px' }}

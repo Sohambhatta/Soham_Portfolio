@@ -184,21 +184,17 @@ const wavelengths = 'https://r4.ieee.org/sem/wp-content/uploads/sites/6/2026/07/
 export const awards: Achievement[] = [
   {
     id: 'ieee-wavelengths', title: 'IEEE Wavelengths',
+    featured: true,
     org: 'IEEE Southeastern Michigan · August 2026', laurel: 'Publication',
     detail: 'My “Future Engineer MIT Report” covers our BWSI radar-imaging project, from collecting scans to the final challenge. Published on pages 23–28.',
     link: wavelengths, linkLabel: 'Read the article',
   },
   {
     id: 'sae-mozley', title: 'Donald and Barbara Mozley Scholarship',
+    featured: true,
     org: 'SAE International · July 2026', laurel: 'Scholarship',
     detail: 'Received the Donald and Barbara Mozley engineering scholarship.',
     link: linkedIn, linkLabel: 'View on LinkedIn',
-  },
-  {
-    id: 'bwsi-first-place', title: 'First Place at BWSI',
-    org: 'UAS–SAR · August 2025', laurel: 'Team Award',
-    detail: 'Our Team 4 placed first in the course’s final radar-imaging challenge.',
-    link: wavelengths, linkLabel: 'Read the team’s story',
   },
   {
     id: 'mit-ewb-honors', title: 'MIT EWB Competition Honors',
@@ -206,6 +202,12 @@ export const awards: Achievement[] = [
     detail: 'Received individual and team honors in the 2025 international competition.',
     featured: true,
     link: linkedIn, linkLabel: 'View on LinkedIn',
+  },
+  {
+    id: 'bwsi-first-place', title: 'First Place at BWSI',
+    org: 'UAS–SAR · August 2025', laurel: 'Team Award',
+    detail: 'Our Team 4 placed first in the course’s final radar-imaging challenge.',
+    link: wavelengths, linkLabel: 'Read the team’s story',
   },
   {
     id: 'science-department', title: 'Science Department Award',
