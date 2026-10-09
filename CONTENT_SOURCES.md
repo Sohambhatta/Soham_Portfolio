@@ -33,6 +33,10 @@ Reviewed October 8, 2026. The owner supplied detailed descriptions of Doorcam, t
 
 ## Presentation
 
+- Awards and publications: [IEEE Southeastern Michigan Wavelengths, August 2026](https://r4.ieee.org/sem/wp-content/uploads/sites/6/2026/07/2026_08_WL.pdf#page=23), pages 23–28, credits Soham Bhatta's “Future Engineer MIT Report.” It is presented as a newsletter publication, not a peer-reviewed research paper. The article and pictured award confirm Team 4's BWSI first place.
+- The named SAE scholarship, MIT EWB individual/team honors, school science award, state Science Olympiad trial-event placing, and two bowling awards come from publicly indexed LinkedIn honors. No unnamed trial event or additional award criteria were inferred.
+- The resume was not available in this workspace. Resume-only projects and honors remain pending rather than being invented.
+
 - Short summaries belong on posters; technical detail belongs in project windows. Intro, project themes, highlights, and skill evidence use the same three sources.
 - Basketball and VentPilot were removed from the featured selection following the owner's instruction to focus on the three descriptions above.
 - Motion timings, parallax, tilt, shared-layout transitions, intro playback, and particle effects remain unchanged. Short desktop viewports use the existing swipe-rail presentation to keep the cards readable.

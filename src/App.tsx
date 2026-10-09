@@ -17,6 +17,7 @@ import Skills from './components/Skills';
 import Achievements from './components/Achievements';
 import ResumeSection from './components/ResumeViewer';
 import FinalCTA from './components/FinalCTA';
+import Awards from './components/Awards';
 import { EASE } from './components/fx';
 
 // Overlays are only needed on demand — split them out of the first load.
@@ -124,6 +125,9 @@ function Series() {
                 {sections[id]}
               </Scene>
             ))}
+            <Scene id="awards">
+              <Awards />
+            </Scene>
             <FinalCTA onReplay={() => setStage('opening')} />
           </main>
         </motion.div>

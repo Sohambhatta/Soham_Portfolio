@@ -154,17 +154,10 @@ export type Achievement = {
   detail: string;
   laurel: string;
   link?: string;
+  linkLabel?: string;
 };
 
 export const achievements: Achievement[] = [
-  {
-    id: 'bwsi-first-place',
-    title: 'First Place at BWSI',
-    org: 'UAS–SAR · 2025',
-    detail: 'Our team placed first in the UAS–SAR course’s final competition.',
-    laurel: 'Team Award',
-    link: 'https://www.linkedin.com/in/soham-bhatta',
-  },
   {
     id: 'sar-resolution',
     title: 'Mapping Indoor Targets',
@@ -182,6 +175,54 @@ export const achievements: Achievement[] = [
     link: 'https://github.com/Sohambhatta/Doorcam',
   },
 
+];
+
+const linkedIn = profile.links.linkedin;
+const wavelengths = 'https://r4.ieee.org/sem/wp-content/uploads/sites/6/2026/07/2026_08_WL.pdf#page=23';
+
+export const awards: Achievement[] = [
+  {
+    id: 'ieee-wavelengths', title: 'IEEE Wavelengths',
+    org: 'IEEE Southeastern Michigan · August 2026', laurel: 'Publication',
+    detail: 'My “Future Engineer MIT Report” covers our BWSI radar-imaging project, from collecting scans to the final challenge. Published on pages 23–28.',
+    link: wavelengths, linkLabel: 'Read the article',
+  },
+  {
+    id: 'sae-mozley', title: 'Donald and Barbara Mozley Scholarship',
+    org: 'SAE International · July 2026', laurel: 'Scholarship',
+    detail: 'Received the Donald and Barbara Mozley engineering scholarship.',
+    link: linkedIn, linkLabel: 'View on LinkedIn',
+  },
+  {
+    id: 'bwsi-first-place', title: 'First Place at BWSI',
+    org: 'UAS–SAR · August 2025', laurel: 'Team Award',
+    detail: 'Our Team 4 placed first in the course’s final radar-imaging challenge.',
+    link: wavelengths, linkLabel: 'Read the team’s story',
+  },
+  {
+    id: 'mit-ewb-honors', title: 'MIT EWB Competition Honors',
+    org: 'Science & Engineering Competition · February 2025', laurel: 'Individual & Team',
+    detail: 'Received individual and team honors in the 2025 competition.',
+    link: linkedIn, linkLabel: 'View on LinkedIn',
+  },
+  {
+    id: 'science-department', title: 'Science Department Award',
+    org: 'International Academy East · June 2025', laurel: 'School Award',
+    detail: 'Received the school’s Science Department Award for 2024–2025.',
+    link: linkedIn, linkLabel: 'View on LinkedIn',
+  },
+  {
+    id: 'science-olympiad', title: 'Science Olympiad: Fourth Place',
+    org: 'State Competition · April 2025', laurel: 'Trial Event',
+    detail: 'Placed fourth in a trial event at the state competition.',
+    link: linkedIn, linkLabel: 'View on LinkedIn',
+  },
+  {
+    id: 'bowling-awards', title: 'Bowling Awards',
+    org: 'March 2025', laurel: 'Scholar Athlete',
+    detail: 'Received the Junior Bowling Award and Junior Bowling Scholar Athlete Award.',
+    link: linkedIn, linkLabel: 'View on LinkedIn',
+  },
 ];
 
 export type Certification = { issuer: string; name: string; link: string };
