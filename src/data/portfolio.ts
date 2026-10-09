@@ -155,6 +155,7 @@ export type Achievement = {
   laurel: string;
   link?: string;
   linkLabel?: string;
+  featured?: boolean;
 };
 
 export const achievements: Achievement[] = [
@@ -201,8 +202,9 @@ export const awards: Achievement[] = [
   },
   {
     id: 'mit-ewb-honors', title: 'MIT EWB Competition Honors',
-    org: 'Science & Engineering Competition · February 2025', laurel: 'Individual & Team',
-    detail: 'Received individual and team honors in the 2025 competition.',
+    org: 'Science & Engineering Competition · February 2025', laurel: 'International Award',
+    detail: 'Received individual and team honors in the 2025 international competition.',
+    featured: true,
     link: linkedIn, linkLabel: 'View on LinkedIn',
   },
   {
